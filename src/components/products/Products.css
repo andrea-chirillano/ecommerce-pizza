@@ -1,0 +1,34 @@
+.products {
+    margin-top: 4.5%;
+    border: 2px solid #424242;
+    background-color: #424242;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.text{
+    font-family: Arial, sans-serif;
+}
+
+.products h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.products img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.products p {
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 1;
+    color: white;
+}
+
+.products p:last-child {
+    margin-bottom: 0;
+}

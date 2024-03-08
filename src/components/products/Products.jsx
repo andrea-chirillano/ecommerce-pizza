@@ -1,27 +1,28 @@
 import "./Products.css";
+import { useParams } from 'react-router-dom';
 import pizzasData from "../../pizzaData.jsx";
 import images from "../../Images.jsx";
 
-
 const Products = () => {
-    return (
-        <div>
-            <h1>Pizza list</h1>
-            <ul>
-                {pizzasData.map((pizza) => (
-                    <li key={pizza.id}>
-                        <h2>{pizza.name}</h2>
-                        <img src={images[pizza.image]} alt={pizza.name} />
-                        <p>Price: ${pizza.price}</p>
-                        <p>Stock: {pizza.stock}</p>
-                        <p>Description: {pizza.description}</p>
-                        <p>Ingredients: {pizza.ingredients.join(", ")}</p>
+    const { id } = useParams();
+    const index = pizzasData.find(pizza => pizza.id === parseInt(id));
 
-                    </li>
-                ))}
-            </ul>
+    if (!index) {
+        return <div>Not found pizza.</div>;
+    }
+
+    return (
+        <div className="home-container">
+            <div className="products">
+                <h2>{index.name}</h2>
+                <img src={images[index.image]} alt={index.name} />
+                <p className="text">Price: ${index.price}</p>
+                <p className="text">Description: {index.description}</p>
+                <p className="text">Ingredients: {index.ingredients.join(', ')}</p>
+                <p className="text">Stock: {index.stock}</p>
+            </div>
         </div>
-    )
+    );
 };
 
 export default Products;
