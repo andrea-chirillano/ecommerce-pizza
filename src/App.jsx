@@ -12,10 +12,10 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products/:id" element={<Products />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/sign-up" element={<SignUp />} />
+          <Route path="ecommerce-pizza/" element={<Home />} />
+          <Route path="ecommerce-pizza/products/:id" element={<Products />} />
+          <Route path="ecommerce-pizza/login" element={<Login />} />
+          <Route path="ecommerce-pizza/sign-up" element={<SignUp />} />
         </Routes>
       </Router>
     </div>
