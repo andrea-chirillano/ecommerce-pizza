@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://andrea-chirillano.github.io/ecommerce-pizza",
+  "homepage": "https://andrea-chirillano.github.io/ecommerce-pizza/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
