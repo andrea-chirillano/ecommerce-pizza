@@ -24,7 +24,7 @@ const Home = () => {
                         <li key={pizza.id} className={index === currentIndex ? 'active' : ''}>
                             <Link to={`/products/${pizza.id}`}>
                                 <img src={images[pizza.image]} alt={pizza.name} />
-                                <h2>{pizza.name}</h2>
+                                <h3>{pizza.name}</h3>
                             </Link>
                         </li>
                     ))}

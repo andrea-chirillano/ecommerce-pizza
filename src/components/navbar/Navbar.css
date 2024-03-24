@@ -1,5 +1,5 @@
 nav {
-    background-color: #333;
+    background-color: #FFF8E8;
     position: fixed;
     top: 0;
     width: 100%;
@@ -19,17 +19,14 @@ ul {
 
 li {
     display: inline-block;
+    font-family: Arial, sans-serif;
 }
 
 a {
     font-family: Helvetica, Arial, sans-serif;
-    color: white;
+    color: #990D35;
     text-decoration: none;
     padding: 10px 15px;
-}
-
-a:hover {
-    background-color: #555;
 }
 
 .home {

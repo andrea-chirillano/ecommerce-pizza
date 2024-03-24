@@ -4,7 +4,7 @@ const Login = () => {
     return (
         <div className="home-container">
             <div className="login">
-                <h2 className="title">Login</h2>
+                <div className="title"><b>Login </b><br/></div>
                 <form>
                     <div className="form-group">
                         <label htmlFor="username">Username:</label>

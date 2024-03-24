@@ -49,17 +49,6 @@ const pizzasData = [
         image: "napolitana",
         stock: 8,
     },
-    {
-        id: 6,
-        name: "Pizza with Ham and Morron",
-        price: 9.99,
-        description:
-            "Delicious pizza with tomato sauce, mozzarella, ham and morron.",
-        ingredients: ["Tomate sauce", "Mozzarella", "Ham", "Morron"],
-        image: "morrronham",
-        stock: 5,
-    },
-    
 ];
 
 export default pizzasData;
