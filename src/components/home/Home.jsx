@@ -22,7 +22,7 @@ const Home = () => {
                 <ul className="pizza-list" style={{ transform: `translateX(-${currentIndex * (100 / pizzasData.length)}%)` }}>
                     {pizzasData.map((pizza, index) => (
                         <li key={pizza.id} className={index === currentIndex ? 'active' : ''}>
-                            <Link to={`/products/${pizza.id}`}>
+                            <Link to={`/ecommerce-pizza/products/${pizza.id}`}>
                                 <img src={images[pizza.image]} alt={pizza.name} />
                                 <h3>{pizza.name}</h3>
                             </Link>
